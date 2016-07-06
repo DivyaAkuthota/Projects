@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "638A2BB3EBC2EB72EBB2DD338BE9BB88AC5DC078",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AACC61186F20B2F1B6D494787402BCFA77506542" : 0,
+    "638A2BB3EBC2EB72EBB2DD338BE9BB88AC5DC078" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5D4927F6-E400-448B-8F6E-C969D740B020",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AACC61186F20B2F1B6D494787402BCFA77506542" : "",
+    "638A2BB3EBC2EB72EBB2DD338BE9BB88AC5DC078" : "applications\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "EightGlasses",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "EightGlasses\/EightGlasses.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/DivyaAkuthota\/applications.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "638A2BB3EBC2EB72EBB2DD338BE9BB88AC5DC078"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/DivyaAkuthota\/hackerrank.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AACC61186F20B2F1B6D494787402BCFA77506542"
+    }
+  ]
+}

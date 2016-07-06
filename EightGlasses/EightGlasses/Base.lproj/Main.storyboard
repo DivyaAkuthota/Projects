@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="waL-Kr-hvh">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--History-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="68" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BUz-G8-vi5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="hzP-r3-wrR"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="FWG-KC-oz4"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BUz-G8-vi5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="4M0-11-TPt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BUz-G8-vi5" secondAttribute="bottom" id="Jrq-LO-4up"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BUz-G8-vi5" secondAttribute="trailing" constant="-20" id="UUh-ee-fuY"/>
+                            <constraint firstItem="BUz-G8-vi5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="XlX-RR-fSt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="History" id="8Ge-eL-2id">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="1gw-Dm-9vb"/>
+                    </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="HistoryTableView" destination="BUz-G8-vi5" id="BAr-Ni-1IB"/>
+                        <segue destination="kK6-gQ-DOy" kind="show" identifier="SampleModal" id="BPQ-xT-CdP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="616.5" y="-623.5"/>
+        </scene>
+        <!--History Detail View Controller-->
+        <scene sceneID="TnT-Yn-MBr">
+            <objects>
+                <viewController id="kK6-gQ-DOy" customClass="HistoryDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZJi-qY-7Qr"/>
+                        <viewControllerLayoutGuide type="bottom" id="7aQ-nN-GW5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SwP-V0-fXA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="You drank x no: of glasses" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uck-1a-yJh">
+                                <rect key="frame" x="0.0" y="529" width="375" height="31"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="23"/>
+                                <color key="textColor" red="0.1215686275" green="0.1333333333" blue="0.4360274442" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="33I-13-iNg">
+                                <rect key="frame" x="28" y="113" width="318" height="393"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="26" minimumInteritemSpacing="10" id="GfS-2F-QZN">
+                                    <size key="itemSize" width="80" height="80"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="historyCellIdentifier" id="BM1-Mr-62K" customClass="GlassCell">
+                                        <rect key="frame" x="10" y="10" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2wU-cE-G1D">
+                                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <size key="customSize" width="80" height="80"/>
+                                        <connections>
+                                            <outlet property="glassImage" destination="2wU-cE-G1D" id="kg7-Vu-O5D"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="kK6-gQ-DOy" id="L8G-5v-LfU"/>
+                                    <outlet property="delegate" destination="kK6-gQ-DOy" id="gwe-8Z-ViB"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4v-kX-xmw">
+                                <rect key="frame" x="94" y="84" width="186" height="21"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="23"/>
+                                <color key="textColor" red="0.1215686275" green="0.1333333333" blue="0.4360274442" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="33I-13-iNg" firstAttribute="leading" secondItem="SwP-V0-fXA" secondAttribute="leadingMargin" constant="8" id="27X-Iz-6PO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="p4v-kX-xmw" secondAttribute="trailing" constant="75" id="9Lt-w9-ZcM"/>
+                            <constraint firstItem="33I-13-iNg" firstAttribute="top" secondItem="p4v-kX-xmw" secondAttribute="bottom" constant="8" id="QbG-B0-OFK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="33I-13-iNg" secondAttribute="trailing" constant="9" id="W7y-iS-R8V"/>
+                            <constraint firstItem="uck-1a-yJh" firstAttribute="top" secondItem="33I-13-iNg" secondAttribute="bottom" constant="23" id="cXm-zy-fpe"/>
+                            <constraint firstItem="p4v-kX-xmw" firstAttribute="leading" secondItem="SwP-V0-fXA" secondAttribute="leadingMargin" constant="74" id="g77-H2-Dol"/>
+                            <constraint firstItem="33I-13-iNg" firstAttribute="top" secondItem="p4v-kX-xmw" secondAttribute="bottom" constant="8" id="yKr-MJ-6oM"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="DisplayGlassesCollectionView" destination="33I-13-iNg" id="yqu-7j-Eq6"/>
+                        <outlet property="HistoryDetailUIView" destination="SwP-V0-fXA" id="zpw-ii-KEs"/>
+                        <outlet property="dateLabel" destination="p4v-kX-xmw" id="Ftn-ea-B0P"/>
+                        <outlet property="statusLabel" destination="uck-1a-yJh" id="K3W-io-oVb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YS0-s7-KOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1148.5" y="-800.5"/>
+        </scene>
+        <!--Glass Tab Bar Controller-->
+        <scene sceneID="L7e-7P-XbA">
+            <objects>
+                <tabBarController id="waL-Kr-hvh" customClass="GlassTabBarController" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" barStyle="black" id="hJP-Ou-xR1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.97869449279524556" green="1" blue="0.96413136548803657" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.12156862745098039" green="0.13333333333333333" blue="0.43602744423457451" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="tH1-5N-pHm" kind="relationship" relationship="viewControllers" id="st2-pN-cTD"/>
+                        <segue destination="BLp-Zx-CGY" kind="relationship" relationship="viewControllers" id="4QY-Q9-x6n"/>
+                        <segue destination="nVs-Li-poW" kind="relationship" relationship="viewControllers" id="9sW-NL-vgd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BQP-1E-2o1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-468.5" y="92.5"/>
+        </scene>
+        <!--Today-->
+        <scene sceneID="PtM-H0-qYd">
+            <objects>
+                <viewController id="BLp-Zx-CGY" customClass="GlassesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="giY-hF-h7p"/>
+                        <viewControllerLayoutGuide type="bottom" id="CmA-Tc-kHx"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="KPx-wN-zla">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" layoutMarginsFollowReadableWidth="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="not-JX-iJy">
+                                <rect key="frame" x="28" y="146" width="318" height="309"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="26" minimumInteritemSpacing="10" id="h26-yK-JbH">
+                                    <size key="itemSize" width="80" height="80"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GlassCell" id="AIb-aO-gSH" customClass="GlassCell">
+                                        <rect key="frame" x="10" y="10" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pba-1V-kL2">
+                                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <size key="customSize" width="80" height="80"/>
+                                        <connections>
+                                            <outlet property="glassImage" destination="pba-1V-kL2" id="y4Q-aB-7ji"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BLp-Zx-CGY" id="7fW-k0-bz2"/>
+                                    <outlet property="delegate" destination="BLp-Zx-CGY" id="499-j0-A5u"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Today" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGu-ZA-qkN">
+                                <rect key="frame" x="45" y="51" width="284" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BBa-UY-2tF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="34"/>
+                                <color key="textColor" red="0.97869449279999998" green="1" blue="0.9641313655" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96461189619999999" green="1" blue="0.96483104119999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="not-JX-iJy" firstAttribute="top" secondItem="nGu-ZA-qkN" secondAttribute="bottom" constant="45" id="8SE-9c-ApC"/>
+                            <constraint firstItem="nGu-ZA-qkN" firstAttribute="top" secondItem="giY-hF-h7p" secondAttribute="bottom" constant="31" id="BrP-4p-25o"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="not-JX-iJy" secondAttribute="trailing" constant="9" id="Ggl-JH-gTP"/>
+                            <constraint firstItem="nGu-ZA-qkN" firstAttribute="leading" secondItem="KPx-wN-zla" secondAttribute="leadingMargin" constant="25" id="Pz7-fo-oh8"/>
+                            <constraint firstItem="nGu-ZA-qkN" firstAttribute="leading" secondItem="KPx-wN-zla" secondAttribute="leadingMargin" constant="25" id="QjB-Bh-h96"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nGu-ZA-qkN" secondAttribute="trailing" constant="26" id="SgN-hp-tHc"/>
+                            <constraint firstItem="CmA-Tc-kHx" firstAttribute="top" secondItem="not-JX-iJy" secondAttribute="bottom" constant="10" id="ax8-nA-xCl"/>
+                            <constraint firstItem="not-JX-iJy" firstAttribute="leading" secondItem="KPx-wN-zla" secondAttribute="leadingMargin" constant="8" id="cpQ-GU-lRX"/>
+                            <constraint firstItem="nGu-ZA-qkN" firstAttribute="top" secondItem="giY-hF-h7p" secondAttribute="bottom" constant="31" id="wjx-XW-jaW"/>
+                            <constraint firstItem="not-JX-iJy" firstAttribute="top" secondItem="nGu-ZA-qkN" secondAttribute="bottom" constant="10" id="xpi-e9-zOu"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Today" image="test-tab-icon-3.png" selectedImage="test-tab-icon-3.png" id="tUe-86-pJU"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="GlassCollectionView" destination="not-JX-iJy" id="L3c-0z-ywB"/>
+                        <outlet property="GlassesUIView" destination="KPx-wN-zla" id="xOY-Zg-5GZ"/>
+                        <outlet property="todayDateLabel" destination="nGu-ZA-qkN" id="NVt-mc-5tN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JW1-Yx-PZC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98.5" y="140.5"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="sqF-wQ-DzG">
+            <objects>
+                <viewController id="nVs-Li-poW" customClass="AboutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Tc-eF-EGf"/>
+                        <viewControllerLayoutGuide type="bottom" id="ITV-5b-KF4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wYY-GD-vac">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="About Eight Glasses" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="XtB-VX-DmO">
+                                <rect key="frame" x="-3" y="58" width="375" height="35"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="29"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="22" baselineAdjustment="alignBaselines" minimumFontSize="3" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DIC-vB-q93">
+                                <rect key="frame" x="52" y="101" width="271" height="436"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">Drink eight 8-ounce glasses of water a day.
+
+This app helps you track  the number of glasses of water you drank in a day . Also provides a history of the number of glasses you had from the past.Each glass represents 8 oz of water.Click in the glass to fill water after having 8 oz of water.
+Data will be deleted when the app is deleted. </string>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.99593366520000004" blue="0.95766991339999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ITV-5b-KF4" firstAttribute="top" secondItem="DIC-vB-q93" secondAttribute="bottom" constant="30" id="AcO-FZ-LtB"/>
+                            <constraint firstItem="XtB-VX-DmO" firstAttribute="leading" secondItem="wYY-GD-vac" secondAttribute="leadingMargin" constant="-23" id="ERn-SM-wdJ"/>
+                            <constraint firstItem="XtB-VX-DmO" firstAttribute="top" secondItem="1Tc-eF-EGf" secondAttribute="bottom" constant="38" id="I1d-9K-066"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XtB-VX-DmO" secondAttribute="trailing" constant="-17" id="OmB-cw-bmF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DIC-vB-q93" secondAttribute="trailing" constant="32" id="XhP-Il-WS5"/>
+                            <constraint firstItem="DIC-vB-q93" firstAttribute="top" secondItem="XtB-VX-DmO" secondAttribute="bottom" constant="8" id="q9h-Ku-T01"/>
+                            <constraint firstItem="DIC-vB-q93" firstAttribute="leading" secondItem="wYY-GD-vac" secondAttribute="leadingMargin" constant="32" id="qZe-pO-7C9"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="ZcK-wg-oUH"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="AboutView" destination="wYY-GD-vac" id="bZd-mp-7zR"/>
+                        <outlet property="view" destination="wYY-GD-vac" id="6sc-3g-mAk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y0G-R4-WS4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="163.5" y="1063.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TFe-SL-QaE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tH1-5N-pHm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="history" id="EDK-Fl-woe"/>
+                    <toolbarItems/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Y0z-fX-mKc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="W8X-aa-11O"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FzM-7l-Q3r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151.5" y="-623.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="test-tab-icon-3.png" width="30" height="30"/>
+    </resources>
+</document>
