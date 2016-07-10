@@ -42,8 +42,10 @@ NSArray *matchingData;
     self.HistoryTableView.backgroundColor = [UIColor clearColor];
     self.HistoryTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     UIImageView *tableImage = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"pattern-bg-2.png"]];
-    [tableImage setFrame:self.HistoryTableView.frame];
-    self.HistoryTableView.backgroundView = tableImage;
+    [tableImage setFrame:self.HistoryView.frame];
+    [self.HistoryTableView addSubview:tableImage];
+    [self.HistoryTableView sendSubviewToBack:tableImage];
+    //    self.HistoryTableView.backgroundView = tableImage;
     // Do any additional setup after loading the view, typically from a nib.
 }
 

@@ -21,8 +21,9 @@
     // Do any additional setup after loading the view.
     self.selectedIndex = 1;
     UITabBar *glassTabBar = self.tabBar;
-    glassTabBar.backgroundColor = [UIColor colorWithRed:0.06 green:0.47 blue:0.75 alpha:1.0];
-    glassTabBar.tintColor = [UIColor blackColor];
+//    glassTabBar.backgroundColor = [UIColor colorWithRed:0.06 green:0.47 blue:0.75 alpha:1.0];
+    glassTabBar.backgroundColor = [UIColor colorWithRed:0.07 green:0.08 blue:0.24 alpha:1.0];
+    glassTabBar.tintColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {

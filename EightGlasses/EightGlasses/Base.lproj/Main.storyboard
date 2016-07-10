@@ -42,6 +42,7 @@
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="HistoryTableView" destination="BUz-G8-vi5" id="BAr-Ni-1IB"/>
+                        <outlet property="HistoryView" destination="8bC-Xf-vdC" id="4j7-Oo-v2K"/>
                         <segue destination="kK6-gQ-DOy" kind="show" identifier="SampleModal" id="BPQ-xT-CdP"/>
                     </connections>
                 </viewController>
@@ -64,7 +65,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="You drank x no: of glasses" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uck-1a-yJh">
                                 <rect key="frame" x="0.0" y="529" width="375" height="31"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="23"/>
-                                <color key="textColor" red="0.1215686275" green="0.1333333333" blue="0.4360274442" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.99593366520000004" blue="0.95766991339999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="33I-13-iNg">
@@ -231,7 +232,7 @@
                             <constraint firstItem="not-JX-iJy" firstAttribute="top" secondItem="nGu-ZA-qkN" secondAttribute="bottom" constant="10" id="xpi-e9-zOu"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Today" image="test-tab-icon-3.png" selectedImage="test-tab-icon-3.png" id="tUe-86-pJU"/>
+                    <tabBarItem key="tabBarItem" title="Today" image="today-xxl copy-2.png" selectedImage="today-xxl copy-2.png" id="tUe-86-pJU"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
@@ -321,6 +322,6 @@ Data will be deleted when the app is deleted. </string>
         </scene>
     </scenes>
     <resources>
-        <image name="test-tab-icon-3.png" width="30" height="30"/>
+        <image name="today-xxl copy-2.png" width="30" height="30"/>
     </resources>
 </document>

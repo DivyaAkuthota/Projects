@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UITableView *HistoryTableView;
+@property (strong, nonatomic) IBOutlet UIView *HistoryView;
 
 @property (nonatomic, strong) NSArray *historyArray;
 

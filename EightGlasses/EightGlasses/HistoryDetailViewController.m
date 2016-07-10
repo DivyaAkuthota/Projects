@@ -21,8 +21,15 @@ NSArray *glass;
 - (void)viewDidLoad {
     [super viewDidLoad];
     DateFormatter *dateFormatter = [[DateFormatter alloc]init];
-    self.HistoryDetailUIView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bluegrad1.png"]];
+    self.HistoryDetailUIView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"pattern-bg-2.png"]];
     NSString *date = [self.daily valueForKey:@"date"];
+    
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"dd-MMM-YYYY"];
+    [dateFormat setDateStyle:NSDateFormatterFullStyle];
+//    NSDate *fullMonth = [dateFormat dateFromString:date];
+    
+    
 //    NSString *fullDate = [dateFormatter date];
     self.dateLabel.text = date;
     

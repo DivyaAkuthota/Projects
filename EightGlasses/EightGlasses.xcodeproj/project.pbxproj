@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC274D931D31E17E00D3BB9E /* cellGlass.png in Resources */ = {isa = PBXBuildFile; fileRef = BC274D8D1D31E17E00D3BB9E /* cellGlass.png */; };
+		BC274D941D31E17E00D3BB9E /* eightGlasses.png in Resources */ = {isa = PBXBuildFile; fileRef = BC274D8E1D31E17E00D3BB9E /* eightGlasses.png */; };
+		BC274D951D31E17E00D3BB9E /* emptyGlass-1.png in Resources */ = {isa = PBXBuildFile; fileRef = BC274D8F1D31E17E00D3BB9E /* emptyGlass-1.png */; };
+		BC274D961D31E17E00D3BB9E /* fullGlass-4.png in Resources */ = {isa = PBXBuildFile; fileRef = BC274D901D31E17E00D3BB9E /* fullGlass-4.png */; };
+		BC274D971D31E17E00D3BB9E /* icon@60.png in Resources */ = {isa = PBXBuildFile; fileRef = BC274D911D31E17E00D3BB9E /* icon@60.png */; };
+		BC274D981D31E17E00D3BB9E /* today-xxl copy-2.png in Resources */ = {isa = PBXBuildFile; fileRef = BC274D921D31E17E00D3BB9E /* today-xxl copy-2.png */; };
+		BC274D9A1D31E34A00D3BB9E /* pattern-bg-2.png in Resources */ = {isa = PBXBuildFile; fileRef = BC274D991D31E34A00D3BB9E /* pattern-bg-2.png */; };
 		BC2992CA1D0D0434003D07EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2992C91D0D0434003D07EB /* main.m */; };
 		BC2992CD1D0D0434003D07EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2992CC1D0D0434003D07EB /* AppDelegate.m */; };
 		BC2992D01D0D0434003D07EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2992CF1D0D0434003D07EB /* ViewController.m */; };
@@ -17,36 +24,23 @@
 		BC2992E41D0D075C003D07EB /* GlassesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2992E31D0D075C003D07EB /* GlassesViewController.m */; };
 		BC2992E71D0D076D003D07EB /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2992E61D0D076D003D07EB /* AboutViewController.m */; };
 		BC2992EA1D0D1428003D07EB /* GlassCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2992E91D0D1428003D07EB /* GlassCell.m */; };
-		BC2992ED1D0D161D003D07EB /* fullglass.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2992EB1D0D161D003D07EB /* fullglass.png */; };
-		BC2992EE1D0D161D003D07EB /* waterglass.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2992EC1D0D161D003D07EB /* waterglass.png */; };
-		BC2993161D0D3198003D07EB /* hat.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2993151D0D3198003D07EB /* hat.png */; };
-		BC2993481D0DF093003D07EB /* emptyGlass.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2993461D0DF093003D07EB /* emptyGlass.png */; };
-		BC2993491D0DF093003D07EB /* fullGlass-3.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2993471D0DF093003D07EB /* fullGlass-3.png */; };
 		BC29934C1D0DF1D5003D07EB /* DailyWater.m in Sources */ = {isa = PBXBuildFile; fileRef = BC29934B1D0DF1D5003D07EB /* DailyWater.m */; };
 		BC29934F1D0E3957003D07EB /* ImageUITapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = BC29934E1D0E3957003D07EB /* ImageUITapGestureRecognizer.m */; };
 		BC2A13641D10C3F200B63E27 /* HistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2A13621D10C3F200B63E27 /* HistoryCell.m */; };
 		BC2A13651D10C3F200B63E27 /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2A13631D10C3F200B63E27 /* HistoryCell.xib */; };
-		BC2A13671D10C79D00B63E27 /* bluegrad1.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2A13661D10C79D00B63E27 /* bluegrad1.png */; };
 		BC2A136A1D10DEBD00B63E27 /* HistoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2A13691D10DEBD00B63E27 /* HistoryDetailViewController.m */; };
-		BC2A136C1D10ECD100B63E27 /* santa@120.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2A136B1D10ECD100B63E27 /* santa@120.png */; };
-		BC2A136E1D12395000B63E27 /* 8_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2A136D1D12395000B63E27 /* 8_icon.png */; };
 		BC2A13741D123F3B00B63E27 /* GlassTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2A13731D123F3B00B63E27 /* GlassTabBarController.m */; };
-		BC2A137A1D1362D800B63E27 /* justFullGlass.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2A13791D1362D800B63E27 /* justFullGlass.png */; };
-		BC2A137C1D13633400B63E27 /* justFullGlass-2.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2A137B1D13633400B63E27 /* justFullGlass-2.png */; };
-		BC2A137E1D1376EC00B63E27 /* cellGlass.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2A137D1D1376EC00B63E27 /* cellGlass.png */; };
-		BC2A13821D13A42900B63E27 /* pattern-bg-2.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2A13811D13A42900B63E27 /* pattern-bg-2.png */; };
-		BC2A13881D13B8A500B63E27 /* test-tab-icon-3.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2A13871D13B8A500B63E27 /* test-tab-icon-3.png */; };
-		BC2A138A1D13C09E00B63E27 /* LaunchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2A13891D13C09E00B63E27 /* LaunchScreen.png */; };
-		BC509CAB1D20847300D190D8 /* FullGlass-now.png in Resources */ = {isa = PBXBuildFile; fileRef = BC509CAA1D20847300D190D8 /* FullGlass-now.png */; };
 		BCA1AC8F1D209220005F3BEC /* DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA1AC8E1D209220005F3BEC /* DateFormatter.m */; };
-		BCA1AC931D20AA62005F3BEC /* emptyGlass-now.png in Resources */ = {isa = PBXBuildFile; fileRef = BCA1AC921D20AA62005F3BEC /* emptyGlass-now.png */; };
-		BCA1AC951D20ABD3005F3BEC /* emptyGlass-now-1.png in Resources */ = {isa = PBXBuildFile; fileRef = BCA1AC941D20ABD3005F3BEC /* emptyGlass-now-1.png */; };
-		BCA1AC971D20AC32005F3BEC /* fullGlass-2.png in Resources */ = {isa = PBXBuildFile; fileRef = BCA1AC961D20AC32005F3BEC /* fullGlass-2.png */; };
-		BCA1AC9D1D20AEA9005F3BEC /* fullGlass-4.png in Resources */ = {isa = PBXBuildFile; fileRef = BCA1AC9C1D20AEA9005F3BEC /* fullGlass-4.png */; };
-		BCA1AC9F1D20AF61005F3BEC /* emptyGlass-1.png in Resources */ = {isa = PBXBuildFile; fileRef = BCA1AC9E1D20AF61005F3BEC /* emptyGlass-1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC274D8D1D31E17E00D3BB9E /* cellGlass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellGlass.png; sourceTree = "<group>"; };
+		BC274D8E1D31E17E00D3BB9E /* eightGlasses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eightGlasses.png; sourceTree = "<group>"; };
+		BC274D8F1D31E17E00D3BB9E /* emptyGlass-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emptyGlass-1.png"; sourceTree = "<group>"; };
+		BC274D901D31E17E00D3BB9E /* fullGlass-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fullGlass-4.png"; sourceTree = "<group>"; };
+		BC274D911D31E17E00D3BB9E /* icon@60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@60.png"; sourceTree = "<group>"; };
+		BC274D921D31E17E00D3BB9E /* today-xxl copy-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "today-xxl copy-2.png"; sourceTree = "<group>"; };
+		BC274D991D31E34A00D3BB9E /* pattern-bg-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pattern-bg-2.png"; sourceTree = "<group>"; };
 		BC2992C51D0D0434003D07EB /* EightGlasses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EightGlasses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC2992C91D0D0434003D07EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BC2992CB1D0D0434003D07EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,11 +58,6 @@
 		BC2992E61D0D076D003D07EB /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		BC2992E81D0D1428003D07EB /* GlassCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlassCell.h; sourceTree = "<group>"; };
 		BC2992E91D0D1428003D07EB /* GlassCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlassCell.m; sourceTree = "<group>"; };
-		BC2992EB1D0D161D003D07EB /* fullglass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fullglass.png; sourceTree = "<group>"; };
-		BC2992EC1D0D161D003D07EB /* waterglass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waterglass.png; sourceTree = "<group>"; };
-		BC2993151D0D3198003D07EB /* hat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hat.png; path = ../CollectionViewSample/hat.png; sourceTree = "<group>"; };
-		BC2993461D0DF093003D07EB /* emptyGlass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = emptyGlass.png; path = ../../icons/emptyGlass.png; sourceTree = "<group>"; };
-		BC2993471D0DF093003D07EB /* fullGlass-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fullGlass-3.png"; path = "../../icons/fullGlass-3.png"; sourceTree = "<group>"; };
 		BC29934A1D0DF1D5003D07EB /* DailyWater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyWater.h; sourceTree = "<group>"; };
 		BC29934B1D0DF1D5003D07EB /* DailyWater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyWater.m; sourceTree = "<group>"; };
 		BC29934D1D0E3957003D07EB /* ImageUITapGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUITapGestureRecognizer.h; sourceTree = "<group>"; };
@@ -76,27 +65,12 @@
 		BC2A13611D10C3F200B63E27 /* HistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryCell.h; sourceTree = "<group>"; };
 		BC2A13621D10C3F200B63E27 /* HistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryCell.m; sourceTree = "<group>"; };
 		BC2A13631D10C3F200B63E27 /* HistoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
-		BC2A13661D10C79D00B63E27 /* bluegrad1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bluegrad1.png; path = ../../icons/bluegrad1.png; sourceTree = "<group>"; };
 		BC2A13681D10DEBD00B63E27 /* HistoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryDetailViewController.h; sourceTree = "<group>"; };
 		BC2A13691D10DEBD00B63E27 /* HistoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryDetailViewController.m; sourceTree = "<group>"; };
-		BC2A136B1D10ECD100B63E27 /* santa@120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "santa@120.png"; sourceTree = "<group>"; };
-		BC2A136D1D12395000B63E27 /* 8_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 8_icon.png; path = ../../icons/8_icon.png; sourceTree = "<group>"; };
 		BC2A13721D123F3B00B63E27 /* GlassTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlassTabBarController.h; sourceTree = "<group>"; };
 		BC2A13731D123F3B00B63E27 /* GlassTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlassTabBarController.m; sourceTree = "<group>"; };
-		BC2A13791D1362D800B63E27 /* justFullGlass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = justFullGlass.png; path = ../../icons/justFullGlass.png; sourceTree = "<group>"; };
-		BC2A137B1D13633400B63E27 /* justFullGlass-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "justFullGlass-2.png"; path = "../../icons/justFullGlass-2.png"; sourceTree = "<group>"; };
-		BC2A137D1D1376EC00B63E27 /* cellGlass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cellGlass.png; path = ../../icons/cellGlass.png; sourceTree = "<group>"; };
-		BC2A13811D13A42900B63E27 /* pattern-bg-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pattern-bg-2.png"; path = "../../icons/pattern-bg-2.png"; sourceTree = "<group>"; };
-		BC2A13871D13B8A500B63E27 /* test-tab-icon-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "test-tab-icon-3.png"; path = "../../icons/test-tab-icon-3.png"; sourceTree = "<group>"; };
-		BC2A13891D13C09E00B63E27 /* LaunchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LaunchScreen.png; path = ../../icons/LaunchScreen.png; sourceTree = "<group>"; };
-		BC509CAA1D20847300D190D8 /* FullGlass-now.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "FullGlass-now.png"; path = "../../icons/FullGlass-now.png"; sourceTree = "<group>"; };
 		BCA1AC8D1D209220005F3BEC /* DateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateFormatter.h; sourceTree = "<group>"; };
 		BCA1AC8E1D209220005F3BEC /* DateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateFormatter.m; sourceTree = "<group>"; };
-		BCA1AC921D20AA62005F3BEC /* emptyGlass-now.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "emptyGlass-now.png"; path = "../../icons/emptyGlass-now.png"; sourceTree = "<group>"; };
-		BCA1AC941D20ABD3005F3BEC /* emptyGlass-now-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "emptyGlass-now-1.png"; path = "../../icons/emptyGlass-now-1.png"; sourceTree = "<group>"; };
-		BCA1AC961D20AC32005F3BEC /* fullGlass-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fullGlass-2.png"; path = "../../icons/fullGlass-2.png"; sourceTree = "<group>"; };
-		BCA1AC9C1D20AEA9005F3BEC /* fullGlass-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fullGlass-4.png"; path = "../../icons/fullGlass-4.png"; sourceTree = "<group>"; };
-		BCA1AC9E1D20AF61005F3BEC /* emptyGlass-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "emptyGlass-1.png"; path = "../../icons/emptyGlass-1.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +84,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC274D8C1D31E17E00D3BB9E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC274D991D31E34A00D3BB9E /* pattern-bg-2.png */,
+				BC274D8D1D31E17E00D3BB9E /* cellGlass.png */,
+				BC274D8E1D31E17E00D3BB9E /* eightGlasses.png */,
+				BC274D8F1D31E17E00D3BB9E /* emptyGlass-1.png */,
+				BC274D901D31E17E00D3BB9E /* fullGlass-4.png */,
+				BC274D911D31E17E00D3BB9E /* icon@60.png */,
+				BC274D921D31E17E00D3BB9E /* today-xxl copy-2.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		BC2992BC1D0D0434003D07EB = {
 			isa = PBXGroup;
 			children = (
@@ -130,7 +118,7 @@
 		BC2992C71D0D0434003D07EB /* EightGlasses */ = {
 			isa = PBXGroup;
 			children = (
-				BC509CAC1D2088B700D190D8 /* Resources */,
+				BC274D8C1D31E17E00D3BB9E /* Resources */,
 				BCA1AC901D20A6C9005F3BEC /* UtilityClasses */,
 				BCA1AC911D20A6F7005F3BEC /* Views */,
 				BC2992D11D0D0434003D07EB /* Main.storyboard */,
@@ -149,42 +137,6 @@
 				BC2992C91D0D0434003D07EB /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		BC509CAC1D2088B700D190D8 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				BC509CAD1D2088D000D190D8 /* images */,
-			);
-			name = Resources;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		BC509CAD1D2088D000D190D8 /* images */ = {
-			isa = PBXGroup;
-			children = (
-				BCA1AC9E1D20AF61005F3BEC /* emptyGlass-1.png */,
-				BCA1AC9C1D20AEA9005F3BEC /* fullGlass-4.png */,
-				BCA1AC961D20AC32005F3BEC /* fullGlass-2.png */,
-				BCA1AC941D20ABD3005F3BEC /* emptyGlass-now-1.png */,
-				BCA1AC921D20AA62005F3BEC /* emptyGlass-now.png */,
-				BC509CAA1D20847300D190D8 /* FullGlass-now.png */,
-				BC2A13891D13C09E00B63E27 /* LaunchScreen.png */,
-				BC2A13871D13B8A500B63E27 /* test-tab-icon-3.png */,
-				BC2A13811D13A42900B63E27 /* pattern-bg-2.png */,
-				BC2A137D1D1376EC00B63E27 /* cellGlass.png */,
-				BC2A137B1D13633400B63E27 /* justFullGlass-2.png */,
-				BC2A13791D1362D800B63E27 /* justFullGlass.png */,
-				BC2A136D1D12395000B63E27 /* 8_icon.png */,
-				BC2A136B1D10ECD100B63E27 /* santa@120.png */,
-				BC2A13661D10C79D00B63E27 /* bluegrad1.png */,
-				BC2993461D0DF093003D07EB /* emptyGlass.png */,
-				BC2993471D0DF093003D07EB /* fullGlass-3.png */,
-				BC2993151D0D3198003D07EB /* hat.png */,
-				BC2992EB1D0D161D003D07EB /* fullglass.png */,
-				BC2992EC1D0D161D003D07EB /* waterglass.png */,
-			);
-			name = images;
 			sourceTree = "<group>";
 		};
 		BCA1AC901D20A6C9005F3BEC /* UtilityClasses */ = {
@@ -283,29 +235,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC2992DB1D0D0434003D07EB /* LaunchScreen.storyboard in Resources */,
-				BCA1AC951D20ABD3005F3BEC /* emptyGlass-now-1.png in Resources */,
-				BCA1AC9F1D20AF61005F3BEC /* emptyGlass-1.png in Resources */,
-				BC2A136E1D12395000B63E27 /* 8_icon.png in Resources */,
 				BC2A13651D10C3F200B63E27 /* HistoryCell.xib in Resources */,
-				BC2993481D0DF093003D07EB /* emptyGlass.png in Resources */,
-				BC2992ED1D0D161D003D07EB /* fullglass.png in Resources */,
-				BC2A138A1D13C09E00B63E27 /* LaunchScreen.png in Resources */,
-				BC2A137A1D1362D800B63E27 /* justFullGlass.png in Resources */,
-				BCA1AC971D20AC32005F3BEC /* fullGlass-2.png in Resources */,
+				BC274D941D31E17E00D3BB9E /* eightGlasses.png in Resources */,
+				BC274D931D31E17E00D3BB9E /* cellGlass.png in Resources */,
+				BC274D981D31E17E00D3BB9E /* today-xxl copy-2.png in Resources */,
 				BC2992D81D0D0434003D07EB /* Assets.xcassets in Resources */,
-				BC2A137C1D13633400B63E27 /* justFullGlass-2.png in Resources */,
-				BC2993161D0D3198003D07EB /* hat.png in Resources */,
 				BC2992D31D0D0434003D07EB /* Main.storyboard in Resources */,
-				BC2A137E1D1376EC00B63E27 /* cellGlass.png in Resources */,
-				BC2A136C1D10ECD100B63E27 /* santa@120.png in Resources */,
-				BCA1AC9D1D20AEA9005F3BEC /* fullGlass-4.png in Resources */,
-				BC2A13671D10C79D00B63E27 /* bluegrad1.png in Resources */,
-				BC2A13821D13A42900B63E27 /* pattern-bg-2.png in Resources */,
-				BC2A13881D13B8A500B63E27 /* test-tab-icon-3.png in Resources */,
-				BC2992EE1D0D161D003D07EB /* waterglass.png in Resources */,
-				BC2993491D0DF093003D07EB /* fullGlass-3.png in Resources */,
-				BC509CAB1D20847300D190D8 /* FullGlass-now.png in Resources */,
-				BCA1AC931D20AA62005F3BEC /* emptyGlass-now.png in Resources */,
+				BC274D951D31E17E00D3BB9E /* emptyGlass-1.png in Resources */,
+				BC274D961D31E17E00D3BB9E /* fullGlass-4.png in Resources */,
+				BC274D9A1D31E34A00D3BB9E /* pattern-bg-2.png in Resources */,
+				BC274D971D31E17E00D3BB9E /* icon@60.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

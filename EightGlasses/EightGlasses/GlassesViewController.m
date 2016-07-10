@@ -30,7 +30,15 @@ DateFormatter *dateFormatter;
     self.GlassCollectionView.layer.masksToBounds = YES;
     self.GlassCollectionView.backgroundColor = [UIColor clearColor];
     
-    self.GlassesUIView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"pattern-bg-2.png"]];
+//    UIImageView *glassImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"pattern-bg-2.png"]];
+//    [glassImage setFrame:self.GlassesUIView.frame];
+//    self.GlassesUIView
+//
+    UIImageView *imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"pattern-bg-2.png"]];
+    [imageView setFrame:self.GlassesUIView.frame];
+    [self.GlassesUIView addSubview: imageView];
+    [self.GlassesUIView sendSubviewToBack:imageView];
+//    self.GlassesUIView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"pattern-bg-2.png"]];
     
     self.glasses = @[@"emptyGlass-1.png" , @"fullglass-4.png"];
     AppDelegate *appDelegate =[[UIApplication sharedApplication]delegate];
@@ -105,7 +113,7 @@ DateFormatter *dateFormatter;
         if(indexPath.item < value){
             cell.glassImage.image = [UIImage imageNamed:[self.glasses objectAtIndex:1]];
             //cell.glassImage.tag = indexPath;
-            cell.glassImage.userInteractionEnabled = NO;
+            cell.glassImage.userInteractionEnabled = YES;
             cell.isFull = TRUE;
             ImageUITapGestureRecognizer *tapRecognizer = [[ImageUITapGestureRecognizer alloc]initWithTarget:self action:@selector(respondToTapGesture:)];
             tapRecognizer.isFull = cell.isFull;
@@ -128,9 +136,20 @@ DateFormatter *dateFormatter;
     return cell;
 }
 
+- (NSString *)platformRawString {
+    size_t size;
+   // sysctlbyname("hw.machine", NULL, &size, NULL, 0);
+    char *machine = malloc(size);
+    // sysctlbyname("hw.machine", machine, &size, NULL, 0);
+    NSString *platform = [NSString stringWithUTF8String:machine];
+    free(machine);
+    return platform;
+}
+
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionView *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
+   // NSString *platform = [self platformRawString];
     return 2.0; // This is the minimum inter item spacing, can be more
 }
 
@@ -209,6 +228,19 @@ DateFormatter *dateFormatter;
     } // enters this loop only if the glass is empty
     else {
     NSLog(@"Glass already full");
+        UIAlertController *fullGlassAlert = [UIAlertController alertControllerWithTitle:@"Glass is Full" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction* ok = [UIAlertAction
+                             actionWithTitle:@"OK"
+                             style:UIAlertActionStyleDefault
+                             handler:^(UIAlertAction * action)
+                             {
+                                 //Do some thing here
+                                 NSLog(@"Full Glass OK");
+                                 
+                             }];
+        [fullGlassAlert addAction:ok];
+        [self presentViewController:fullGlassAlert animated:YES completion:nil];
+        
     }
     
 }

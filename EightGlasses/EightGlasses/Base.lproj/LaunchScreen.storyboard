@@ -18,33 +18,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="LaunchScreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="j1P-qE-9eS">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="LaunchScreen-ps.png" translatesAutoresizingMaskIntoConstraints="NO" id="j1P-qE-9eS">
                                 <rect key="frame" x="0.0" y="105" width="375" height="405"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="473"/>
+                                </variation>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="j1P-qE-9eS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="31" id="1Zc-op-GWR"/>
-                            <constraint firstItem="j1P-qE-9eS" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="D2c-DG-WAd"/>
-                            <constraint firstItem="j1P-qE-9eS" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="gAA-CC-Mdc"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" relation="greaterThanOrEqual" secondItem="j1P-qE-9eS" secondAttribute="bottom" constant="52" id="iOr-ls-APG">
-                                <variation key="widthClass=compact" constant="82"/>
-                            </constraint>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="j1P-qE-9eS" secondAttribute="bottom" id="2ZX-Cn-Dfh"/>
+                            <constraint firstItem="j1P-qE-9eS" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="cWC-JW-m4y"/>
+                            <constraint firstItem="j1P-qE-9eS" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="kp5-1f-n4Y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="j1P-qE-9eS" secondAttribute="trailing" constant="-20" id="yYr-7M-Qdr"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="1Zc-op-GWR"/>
-                                <exclude reference="D2c-DG-WAd"/>
-                                <exclude reference="gAA-CC-Mdc"/>
-                                <exclude reference="iOr-ls-APG"/>
+                                <exclude reference="cWC-JW-m4y"/>
+                                <exclude reference="kp5-1f-n4Y"/>
+                                <exclude reference="yYr-7M-Qdr"/>
+                                <exclude reference="2ZX-Cn-Dfh"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="constraints">
-                                <include reference="1Zc-op-GWR"/>
-                                <include reference="D2c-DG-WAd"/>
-                                <include reference="gAA-CC-Mdc"/>
-                                <include reference="iOr-ls-APG"/>
+                                <include reference="cWC-JW-m4y"/>
+                                <include reference="kp5-1f-n4Y"/>
+                                <include reference="yYr-7M-Qdr"/>
+                                <include reference="2ZX-Cn-Dfh"/>
                             </mask>
                         </variation>
                     </view>
@@ -55,6 +56,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchScreen.png" width="600" height="800"/>
+        <image name="LaunchScreen-ps.png" width="600" height="800"/>
     </resources>
 </document>

@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "EightGlasses/DateFormatter.m"
-            timestampString = "488675502.162357"
+            filePath = "EightGlasses/GlassesViewController.m"
+            timestampString = "489794274.767927"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "-dateToString:"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
+            landmarkName = "-respondToTapGesture:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "EightGlasses/DateFormatter.m"
-            timestampString = "488675827.690945"
+            filePath = "EightGlasses/HistoryDetailViewController.m"
+            timestampString = "489786867.576507"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "-dateToString:"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

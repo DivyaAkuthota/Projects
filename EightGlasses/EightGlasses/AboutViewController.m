@@ -16,7 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.AboutView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"pattern-bg-2.png"]];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"pattern-bg-2.png"]];
+    [imageView setFrame:self.AboutView.frame];
+    [self.AboutView addSubview:imageView];
+    [self.AboutView sendSubviewToBack:imageView];
+//    self.AboutView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"pattern-bg-2.png"]];
     self.AboutView.alpha = 2.0;
     
     // Do any additional setup after loading the view.
