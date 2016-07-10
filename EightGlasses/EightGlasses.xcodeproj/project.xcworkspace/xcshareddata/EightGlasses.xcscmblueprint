@@ -1,14 +1,16 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "638A2BB3EBC2EB72EBB2DD338BE9BB88AC5DC078",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6F169BDCD429E1B2554881211366267A5CC95A3E",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6F169BDCD429E1B2554881211366267A5CC95A3E" : 0,
     "AACC61186F20B2F1B6D494787402BCFA77506542" : 0,
     "638A2BB3EBC2EB72EBB2DD338BE9BB88AC5DC078" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5D4927F6-E400-448B-8F6E-C969D740B020",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6F169BDCD429E1B2554881211366267A5CC95A3E" : "Projects\/",
     "AACC61186F20B2F1B6D494787402BCFA77506542" : "",
     "638A2BB3EBC2EB72EBB2DD338BE9BB88AC5DC078" : "applications\/"
   },
@@ -20,6 +22,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/DivyaAkuthota\/applications.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "638A2BB3EBC2EB72EBB2DD338BE9BB88AC5DC078"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DivyaAkuthota\/Projects.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6F169BDCD429E1B2554881211366267A5CC95A3E"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/DivyaAkuthota\/hackerrank.git",
