@@ -30,6 +30,8 @@
 		BC2A13651D10C3F200B63E27 /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2A13631D10C3F200B63E27 /* HistoryCell.xib */; };
 		BC2A136A1D10DEBD00B63E27 /* HistoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2A13691D10DEBD00B63E27 /* HistoryDetailViewController.m */; };
 		BC2A13741D123F3B00B63E27 /* GlassTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2A13731D123F3B00B63E27 /* GlassTabBarController.m */; };
+		BC95737E1D34858800BFB1B1 /* LaunchScreen-ps.png in Resources */ = {isa = PBXBuildFile; fileRef = BC95737D1D34858800BFB1B1 /* LaunchScreen-ps.png */; };
+		BC9573801D35707300BFB1B1 /* LaunchScreen-ps.png in Resources */ = {isa = PBXBuildFile; fileRef = BC95737F1D35707300BFB1B1 /* LaunchScreen-ps.png */; };
 		BCA1AC8F1D209220005F3BEC /* DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA1AC8E1D209220005F3BEC /* DateFormatter.m */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,8 @@
 		BC2A13691D10DEBD00B63E27 /* HistoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryDetailViewController.m; sourceTree = "<group>"; };
 		BC2A13721D123F3B00B63E27 /* GlassTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlassTabBarController.h; sourceTree = "<group>"; };
 		BC2A13731D123F3B00B63E27 /* GlassTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlassTabBarController.m; sourceTree = "<group>"; };
+		BC95737D1D34858800BFB1B1 /* LaunchScreen-ps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchScreen-ps.png"; sourceTree = SOURCE_ROOT; };
+		BC95737F1D35707300BFB1B1 /* LaunchScreen-ps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchScreen-ps.png"; sourceTree = "<group>"; };
 		BCA1AC8D1D209220005F3BEC /* DateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateFormatter.h; sourceTree = "<group>"; };
 		BCA1AC8E1D209220005F3BEC /* DateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateFormatter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +91,8 @@
 		BC274D8C1D31E17E00D3BB9E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BC95737F1D35707300BFB1B1 /* LaunchScreen-ps.png */,
+				BC95737D1D34858800BFB1B1 /* LaunchScreen-ps.png */,
 				BC274D991D31E34A00D3BB9E /* pattern-bg-2.png */,
 				BC274D8D1D31E17E00D3BB9E /* cellGlass.png */,
 				BC274D8E1D31E17E00D3BB9E /* eightGlasses.png */,
@@ -238,11 +244,13 @@
 				BC2A13651D10C3F200B63E27 /* HistoryCell.xib in Resources */,
 				BC274D941D31E17E00D3BB9E /* eightGlasses.png in Resources */,
 				BC274D931D31E17E00D3BB9E /* cellGlass.png in Resources */,
+				BC9573801D35707300BFB1B1 /* LaunchScreen-ps.png in Resources */,
 				BC274D981D31E17E00D3BB9E /* today-xxl copy-2.png in Resources */,
 				BC2992D81D0D0434003D07EB /* Assets.xcassets in Resources */,
 				BC2992D31D0D0434003D07EB /* Main.storyboard in Resources */,
 				BC274D951D31E17E00D3BB9E /* emptyGlass-1.png in Resources */,
 				BC274D961D31E17E00D3BB9E /* fullGlass-4.png in Resources */,
+				BC95737E1D34858800BFB1B1 /* LaunchScreen-ps.png in Resources */,
 				BC274D9A1D31E34A00D3BB9E /* pattern-bg-2.png in Resources */,
 				BC274D971D31E17E00D3BB9E /* icon@60.png in Resources */,
 			);
@@ -380,8 +388,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CURRENT_PROJECT_VERSION = 1.0;
 				INFOPLIST_FILE = EightGlasses/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -396,8 +404,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CURRENT_PROJECT_VERSION = 1.0;
 				INFOPLIST_FILE = EightGlasses/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
